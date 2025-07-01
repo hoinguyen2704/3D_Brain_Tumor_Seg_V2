@@ -16,7 +16,7 @@
 
 ```
 # Set up Python virtual environment
-
+Python 3.11.13
 python -m venv venv && source venv/bin/activate
 
 # Make sure PIP is up to date
@@ -26,6 +26,9 @@ pip install -U pip wheel setuptools
 # Install required dependencies
 
 pip install -r requirements.txt
+pip uninstall torch torchvision torchaudio
+pip install torch==2.0.1 torchvision==0.15.2 torchaudio==2.0.2 --extra-index-url https://download.pytorch.org/whl/cu117
+
 
 ```
 
